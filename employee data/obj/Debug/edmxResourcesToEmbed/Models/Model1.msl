@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeeData_LamieModelStoreContainer" CdmEntityContainer="EmployeeData_LamieEntities">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="EmployeeData_LamieModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Dep_Id" ColumnName="Dep_Id" />
+          <ScalarProperty Name="Dep_Name" ColumnName="Dep_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="EmployeeData_LamieModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+          <ScalarProperty Name="Emp_Full_Names" ColumnName="Emp_Full_Names" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Dep_Id" ColumnName="Dep_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Men">
+      <EntityTypeMapping TypeName="EmployeeData_LamieModel.Man">
+        <MappingFragment StoreEntitySet="Man">
+          <ScalarProperty Name="Man_Id" ColumnName="Man_Id" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+          <ScalarProperty Name="Dep_Id" ColumnName="Dep_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
